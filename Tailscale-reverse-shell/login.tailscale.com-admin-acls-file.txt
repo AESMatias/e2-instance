@@ -1,0 +1,18 @@
+{
+	"tagOwners": {
+		"tag:externo": ["username@gmail.com"],
+	},
+
+	"acls": [
+		{"action": "accept", "src": ["username@gmail.com"], "dst": ["*:*"]},
+	],
+
+	"ssh": [
+		{
+			"action": "accept",
+			"src":    ["username@gmail.com"],
+			"dst":    ["tag:EXTERN"],
+			"users":  ["root", "autogroup:nonroot"],
+		},
+	],
+}
